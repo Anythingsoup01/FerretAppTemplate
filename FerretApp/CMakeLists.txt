@@ -3,10 +3,10 @@ set(SRCS
     src/FerretApp.cpp
     src/FerretLayer.h
 )
-add_executable(FerretAppExample ${SRCS})
-set_property(TARGET FerretAppExample PROPERTY CXX_STANDARD 20)
+add_executable(FerretApp ${SRCS})
+set_property(TARGET FerretApp PROPERTY CXX_STANDARD 20)
 
-target_include_directories(FerretAppExample PRIVATE
+target_include_directories(FerretApp PRIVATE
     src
     ${CMAKE_SOURCE_DIR}/Ferret/Ferret/src
     ${CMAKE_SOURCE_DIR}/Ferret/vendor/glfw/include
@@ -16,7 +16,7 @@ target_include_directories(FerretAppExample PRIVATE
     ${CMAKE_SOURCE_DIR}/Ferret/vendor/imgui
 )
 
-target_link_libraries(FerretAppExample
+target_link_libraries(FerretApp
     Ferret
 )
 

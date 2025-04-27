@@ -1,4 +1,4 @@
-project "FerretAppExample"
+project "FerretApp"
     language "C++"
     dialect "20"
     kind "ConsoleApp"
@@ -12,7 +12,7 @@ project "FerretAppExample"
     includedirs 
     {
         "src",
-        "$(WORKSPACEDIR)/Ferret/src",
+        "$(WORKSPACEDIR)/Ferret/Ferret/src",
         "$(WORKSPACEDIR)/Ferret/vendor/glfw/include",
         "$(WORKSPACEDIR)/Ferret/vendor/glad/include",
         "$(WORKSPACEDIR)/Ferret/vendor/spdlog/include",
