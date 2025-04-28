@@ -2,3 +2,6 @@
 	path = Ferret
 	url = https://github.com/Anythingsoup01/Ferret.git
 
+[submodule "vendor/prebuild"]
+	path = vendor/prebuild
+	url = https://github.com/Anythingsoup01/prebuild.git
