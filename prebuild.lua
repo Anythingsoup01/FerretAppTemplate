@@ -1,5 +1,5 @@
-workspace("FerretAppTemplate")
-    architecture("x64")
+workspace "FerretAppTemplate"
+    architecture "x64"
 
 external "Ferret"
 external "FerretApp"
