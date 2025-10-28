@@ -4,4 +4,3 @@ Workspace = {
 
 External = "Ferret"
 External = "FerretApp"
-External = "vendor/prebuild"

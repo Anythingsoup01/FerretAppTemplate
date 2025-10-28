@@ -8,12 +8,12 @@ set_property(TARGET FerretApp PROPERTY CXX_STANDARD 20)
 
 target_include_directories(FerretApp PRIVATE
     "src"
-    "$(WORKSPACEDIR)/Ferret/Ferret/src"
-    "$(WORKSPACEDIR)/Ferret/vendor/glfw/include"
-    "$(WORKSPACEDIR)/Ferret/vendor/glad/include"
-    "$(WORKSPACEDIR)/Ferret/vendor/spdlog/include"
-    "$(WORKSPACEDIR)/Ferret/vendor/glm"
-    "$(WORKSPACEDIR)/Ferret/vendor/imgui"
+    "${CMAKE_SOURCE_DIR}/Ferret/Ferret/src"
+    "${CMAKE_SOURCE_DIR}/Ferret/vendor/glfw/include"
+    "${CMAKE_SOURCE_DIR}/Ferret/vendor/glad/include"
+    "${CMAKE_SOURCE_DIR}/Ferret/vendor/spdlog/include"
+    "${CMAKE_SOURCE_DIR}/Ferret/vendor/glm"
+    "${CMAKE_SOURCE_DIR}/Ferret/vendor/imgui"
 )
 
 target_link_libraries(FerretApp
