@@ -1,16 +1,16 @@
-project "FerretApp"
-    language "C++"
-    dialect "20"
-    kind "ConsoleApp"
+Project =
+{
+    name = "FerretApp",
+    language = "C++",
+    dialect = "20",
+    kind = "ConsoleApp",
 
-    files
-    {
+    files = {
         "src/*.cpp",
         "src/*.h",
-    }
+    },
 
-    includedirs 
-    {
+    includedirs = {
         "src",
         "$(WORKSPACEDIR)/Ferret/Ferret/src",
         "$(WORKSPACEDIR)/Ferret/vendor/glfw/include",
@@ -18,9 +18,9 @@ project "FerretApp"
         "$(WORKSPACEDIR)/Ferret/vendor/spdlog/include",
         "$(WORKSPACEDIR)/Ferret/vendor/glm",
         "$(WORKSPACEDIR)/Ferret/vendor/imgui",
-    }
+    },
 
-    links
-    {
+    links = {
         "Ferret",
-    }
+    },
+}

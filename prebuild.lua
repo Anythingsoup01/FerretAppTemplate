@@ -1,6 +1,7 @@
-workspace "FerretAppTemplate"
-    architecture "x64"
+Workspace = {
+    name = "FerretAppTemplate",
+}
 
-external "Ferret"
-external "FerretApp"
-external "vendor/prebuild"
+External = "Ferret"
+External = "FerretApp"
+External = "vendor/prebuild"
